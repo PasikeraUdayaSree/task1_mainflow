@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore different types of cakes with descriptions and images.">
+    <title>Types of Cakes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>Delicious Cakes</h1>
+        <p>Explore the world of cakes!</p>
+    </header>
+
+    <!-- Main Content Section -->
+    <main>
+        <section class="cake-list">
+            <article class="cake" id="chocolateCake">
+                <h2>Chocolate Cake</h2>
+                <img src="https://www.cakeshoponline.in/product-images/Chocolate-Cake-1-Kg-B.jpg/2311715000000099739/200x200"
+                    alt="Chocolate Cake">
+                <p>This rich and moist chocolate cake is a favorite for any chocolate lover!</p>
+                <button onclick="toggleDescription('chocolateCake')">Show Details</button>
+                <p class="cake-details" id="chocolateCakeDetails" style="display:none;">Made with high-quality cocoa and
+                    topped with creamy chocolate frosting. Perfect for birthdays!</p>
+            </article>
+
+            <article class="cake" id="vanillaCake">
+                <h2>Vanilla Cake</h2>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJJ9JnrbMXkV0-ExdxaMLeGRWA9Ud5mh1csA&s"
+                    alt="Vanilla Cake">
+                <p>A light and fluffy vanilla cake, ideal for any occasion!</p>
+                <button onclick="toggleDescription('vanillaCake')">Show Details</button>
+                <p class="cake-details" id="vanillaCakeDetails" style="display:none;">Made with pure vanilla extract and
+                    topped with fresh cream. A classic favorite!</p>
+            </article>
+
+            <article class="cake" id="strawberryCake">
+                <h2>Strawberry Cake</h2>
+                <img src="https://www.thecountrycook.net/wp-content/uploads/2022/07/thumbnail-Fresh-Strawberry-Sheet-Cake-200x200.jpg"
+                    alt="Strawberry Cake">
+                <p>Fresh, fruity, and delicious — the perfect cake for spring!</p>
+                <button onclick="toggleDescription('strawberryCake')">Show Details</button>
+                <p class="cake-details" id="strawberryCakeDetails" style="display:none;">Made with real strawberries and
+                    whipped cream for a light and refreshing flavor.</p>
+            </article>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Delicious Cakes</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>
